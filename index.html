@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Dante Schrantz</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/js/all.min.js"></script>
+
+</head>
+<body>
+   <section class= "header">
+       <nav>
+            <a href="index.html"><img src="Images/dms-high-resolution-logo-white-transparent.png"></a>
+           <div class="nav-links" id="navLinks">
+               <i id="timesIcon" class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                 <li><a href ="index.html" class="regular-btn">HOME</a></li>
+                   <li><a href ="projects.html" class="regular-btn">PROJECTS</a></li>
+                   <li><a href ="about.html">ABOUT</a></li>
+                   <li><a href ="contact.html">CONTACT</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+<div class="text-box">
+       <h1> Luis Álvarez-Cascos López</h1>
+    <p><span class = "auto-type"></span></p>
+</div>
+       
+ </section>
+       
+    
+    <div class="container">
+<!------Projects----->
+<section class= "projects">
+    <h1> Projects</h1>
+    <p>Short summary of the projects I have worked on throughout my career</p>
+    
+    <div class="row">
+        <div class="projects-col">
+            <h3>Project Analysis</h3>
+            <p>I had the privilege of engaging in an NBA playoff statistics analysis, employing R code within the R Studio environment. Our analytical endeavors encompassed a multivariate analysis aimed at discerning the key variables that contribute to a player's excellence. The objective was to elucidate the interrelationships among these variables, thereby identifying the factors that define the optimal performance of players in the context of the NBA playoffs. </p>
+        </div>
+    
+        <div class="projects-col">
+            <h3>Aim2Flourish</h3>
+            <p>I assumed a pivotal role within AIM2Flourish, undertaking comprehensive research and interviews to showcase enterprises harmonizing with the UN Sustainable Development Goals (SDGs). I authored compelling narratives elucidating the nexus between business prosperity and sustainable development, accentuating the positive repercussions on both societal and environmental facets. Through proficient communication on the AIM2Flourish platform, I not only served to inspire and educate my peers but also played an indispensable role in recognizing businesses actively contributing to positive societal and environmental transformations.</p>
+        </div>
+     
+        <div class="projects-col">
+            <h3>Campus Dash</h3>
+            <p>With the help of more colleagues, I was able to develop Campus Dash. This is a food delivery company operated by students from the University of Navarra. Our idea was to be able to compete against companies in markets like the delivery company Glovo. Our advantage comes when creating this project.  We started from the market base that Glovo itself contains. Currently, this project is in a launching stage.</p>
+        </div>
+    </div>
+    
+</section>
+    
+<!------About Me------>
+    <section class="about-me">
+        <h1>About Me</h1>
+        <p>Student at the University of Navarra pursuing a bilingual degree in Business Administration with a focus on Innovation and Entrepreneurship.
+        </p>
+        
+        <div class="row">
+            <div class ="about-me-col">
+                <img src="Images/me.png">
+                <div class="layer">
+                    <h3>ME</h3>
+                </div>
+            </div>
+            <div class ="about-me-col">
+                <img src="Images/Tennis.jpeg">
+                <div class="layer">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class ="about-me-col">
+                <img src="Images/Dogs.jpeg">
+                <div class="layer">
+                    <h3>MY PET</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    
+<!---- Footer---->
+<section class="footer">
+    <h2>Connect With Me</h2>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/luis-%C3%A1lvarez-cascos-l%C3%B3pez-25494a234/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/lluissc2/lluisscc2.github.io/tree/main" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by Luis Álvarez-Cascos López</p>
+</section>
+    
+<!-------Javascript for toggle menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    var timesIcon = document.getElementById("timesIcon");
+
+function showMenu() {
+    navLinks.classList.add("active");
+    timesIcon.classList.add("active");
+}
+
+function hideMenu() {
+    navLinks.classList.remove("active");
+    timesIcon.classList.remove("active");
+}
+</script>
+    
+    
+<!-----------------Javascript for typing text---------------->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings:["Open to work on new sustainable project ideas that achieve environmental development in a gradual state. Experience in dealing with people at work understanding the character and adapting the demands to their capabilities."],
+            typeSpeed: 60,
+            backSpeed: 30,
+            loop: true
+        })
+    </script>
+
+</body>
+</html>
