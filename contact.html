@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="google-site-verification" content="RAW_TALxI5qQFd4yIvp4x231b0t6x3SCqf7QLeveUEk" />
+    <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Dante Schrantz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/js/all.min.js"></script>
+
+</head>
+<body>
+    
+   <section class= "header">
+       <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+           <div class="nav-links" id="navLinks">
+               <i id="timesIcon" class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                  <li><a href ="index.html" class="regular-btn">HOME</a></li>
+                   <li><a href ="projects.html" class="regular-btn">PROJECTS</a></li>
+                   <li><a href ="contact.html">CONTACT</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+
+       
+ </section>
+    
+    <div class="container" >
+  <section class="contact">
+        <a href="mailto:cascoslopez2@gmail.com" class="contact-btn">CONTACT ME</a>
+    </section>
+       
+        
+
+<!---- Footer---->
+<section class="footer">
+    <h2>Connect With Me</h2>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/luis-%C3%A1lvarez-cascos-l%C3%B3pez-25494a234/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/lluissc2" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by Luis Álvarez-Cascos López</p>
+</section>
+    
+<!-------Javascript for toggle menu------->
+<script>
+   var navLinks = document.getElementById("navLinks");
+var timesIcon = document.getElementById("timesIcon");
+
+function showMenu() {
+    navLinks.classList.add("active");
+    timesIcon.classList.add("active");
+}
+
+function hideMenu() {
+    navLinks.classList.remove("active");
+    timesIcon.classList.remove("active");
+}
+</script>
+
+
+    </div>
+</body>
+</html>
