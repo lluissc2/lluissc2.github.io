@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Luis Alvarez-Cascos Lopez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/js/all.min.js"></script>
+
+</head>
+<body>
+    
+   <section class= "header">
+       <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+           <div class="nav-links" id="navLinks">
+               <i id="timesIcon" class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                 <li><a href ="index.html" class="regular-btn">HOME</a></li>
+                   <li><a href ="projects.html" class="regular-btn">PROJECTS</a></li>
+                   <li><a href ="volunteering.html" class="regular-btn">VOLUNTEERING</a></li>
+                   <li><a href ="entrepreneurship.html" class="regular-btn">ENTREPRENEURSHIP</a></li>
+                   <li><a href ="contact.html">CONTACT</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+
+       
+    
+ </section>
+    <div class="container">
+
+<section class="EntrepreneurshipTitle" >
+            <h1>Entrepreneurship</h1>
+            </section>
+    <section class="Entrepreneurship" >
+              <div class="entrepreneurship-container">
+                    <div class="EntrepreneurhsipText">
+                        <p>
+                            In this video I explain the basic knowledge and qualifications of an entrepreneur. 
+                        </p>
+                    </div>
+                  <div class="Entrepreneurship-Demo">
+                    <a><video src="Images/VideoCF(Comprimido).mp4" controls autoplay muted >
+                      Your browser does not support the video tag.
+                    </video></a>
+                </div>
+            </div>
+            <div class="entrepreneurship-container2">
+                <div class="EntrepreneurhsipText2">
+                    <p>
+                        Here I discuss the Lean Startup methodology and how it is applied to businesses.
+                    </p>
+                </div>
+              <div class="Entrepreneurship-Demo2">
+                <a><video src="Images/CriticaTLS(Comprimido).mp4" controls autoplay muted >
+                  Your browser does not support the video tag.
+                </video></a>
+            </div>
+        </div>
+    </section>
+
+    
+<!---- Footer---->
+<section class="footer">
+    <h2>Connect With Me</h2>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/luis-%C3%A1lvarez-cascos-l%C3%B3pez-25494a234/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/lluissc2" target="_blank"><i class="fab fa-github"></i></a> 
+    <p>Made with <i class="fa fa-heart"></i> by Luis Álvarez-Cascos López</p>
+</section>
+    
+<!-------Javascript for toggle menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+var timesIcon = document.getElementById("timesIcon");
+
+function showMenu() {
+    navLinks.classList.add("active");
+    timesIcon.classList.add("active");
+}
+
+function hideMenu() {
+    navLinks.classList.remove("active");
+    timesIcon.classList.remove("active");
+}
+</script>
+    </div>
+</body>
+</html>
