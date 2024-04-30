@@ -554,6 +554,39 @@ h3{
 
 }
 
+.Digital h1{
+    display:flex;
+    justify-content: space-between;
+    max-width:80%;
+    margin:auto;
+    padding-top: 5vw;
+}
+.content-contain{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    max-width:80%;
+    margin:auto;
+}.DigitalText{
+    max-width: 80vw;
+}
+.DigitalText p{
+    font-size:16px;
+    line-height:1.6;
+    text-align: justify;
+}
+
+
+@media (max-width: 700px) {
+    .content-contain {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    .DigitalText{
+        max-width: 90vw;
+    }
+}
+
 .MediaTitle{
     text-align: center;
     max-width:80%;
