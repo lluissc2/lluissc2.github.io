@@ -448,6 +448,14 @@ h3{
     margin:auto;
     padding-top: 5vw;
 }
+/* AI Physics Chatbot title spacing */
+.AI-Physics-Chatbot h1{
+    display: flex;
+    justify-content: space-between;
+    max-width: 78%;
+    margin: auto;
+    padding-top: 5vw;
+}
 .content-contain{
     display:flex;
     align-items:center;
@@ -698,3 +706,4 @@ h3{
     font-size: 2.5em; 
     color: black;
 }
+

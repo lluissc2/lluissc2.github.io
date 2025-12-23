@@ -198,6 +198,13 @@ h3{
     }
 }
 
+/*------Experience-----*/
+.experience{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 40px;
+}
 
 /*------About Me------*/
 .about-me{
@@ -207,15 +214,20 @@ h3{
     padding-top: 50px;
 }
 .about-me-col{
-    flex-basis: 31%;
+    flex-basis: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
     border-radius: 10px;
-    margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
 .about-me-col img{
     width:100%;
+    height: auto;
+    max-height: 520px;
     display:block;
+    object-fit: contain;
+    border-radius: 10px;
 }
 .layer{
     background: transparent;
@@ -273,4 +285,61 @@ h3{
 .icons .fa-linkedin, .icons .fa-github {
     font-size: 2.5em; 
     color: black;
+}
+.experiences-col {
+    border: 2px solid #ddd;       /* Borde del recuadro */
+    padding: 20px;                /* Espacio interno */
+    border-radius: 10px;          /* Bordes redondeados */
+    background-color: #fafafa;    /* Fondo suave */
+    margin: 15px;                 /* Separación entre recuadros */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra ligera */
+    text-align: justify;
+}
+
+/* Center embedded PDFs inside experience cards */
+.experiences-col iframe{
+    display: block;
+    margin: 16px auto;
+    width: 100%;
+    max-width: 560px;
+    height: 360px;
+    border: none;
+}
+
+/* Para que las dos columnas se vean lado a lado */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.experiences-col {
+    flex: 1;
+    min-width: 300px; /* Para que no se rompa en pantallas pequeñas */
+}
+/* margen para la sección About Me */
+section.about-me {
+    margin: 2.5rem auto 1.5rem;         /* reduce bottom spacing so section is closer to footer */
+    padding: 2rem 1rem;        /* espacio interior */
+    max-width: 1100px;
+    box-sizing: border-box;
+}
+
+/* si alguna regla está anulando el margin, prueba esta versión */
+section.about-me.override {
+    margin: 4rem auto !important;
+    padding: 2rem 1rem !important;
+}
+
+/* Smaller specific photo in About Me and spacing */
+.about-me-col.photo-small{
+    max-width: 280px; /* container narrower for the small photo */
+}
+.about-me-col.photo-small img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
